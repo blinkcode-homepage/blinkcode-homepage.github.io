@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>BlinkCode</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">How Well Can Multimodal LLMs Write Code as Vision-Enabled Agents?</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://frankluox.github.io/" target="_blank">Xu Luo</a>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/YJQuantumLeap" target="_blank">Yajun Huang</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YJQuantumLeap/BlinkCode" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/yajuniverse/BlinkCode" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:18px">🤗</p>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/yajuniverse/BlinkCode_leaderboard" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:18px">🏆</p>
+                  </span>
+                  <span>Leaderboard</span>
+                </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-top: -150px; margin-bottom: -100px;">
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <div class="content has-text-centered">
+          <img src="static\images\a_pic_worth_4000$.png" alt="geometric reasoning" width="81%" />
+          <p>
+            This chart displays the performance of fifteen models on the BlinkCode dataset after two rounds of refinement. The results indicate that closed-source models perform significantly better than open-source models. For instance, Claude-3.5-Sonnet and GPT-4 variants, which are closed-source, achieved the highest scores. In contrast, open-source models like IDEFICS-23B, Fuyu-8B, and Palegorma-38B-Mix-22.4 scored very low or even zero. This suggests that closed-source models are currently more effective in handling the tasks presented in the BlinkCode benchmark.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Program synthesis is a critical capability of Large Language Models (LLMs). The generated code is often used as an interface for LLMs to act as agents and interact with the environment. On the other hand, multimodal LLMs, equipped with additional vision modules, have the potential to act as vision-enabled agents that perform interactive tasks with perceived visual information. It is thus also important for multimodal LLMs to be able to generate executable code, yet based on what they have observed in the environment. While well-designed interactive coding benchmarks have been proposed for LLMs, appropriate ones for multimodal LLMs are lacking. We thus propose BlinkCode, an interactive, comprehensive, visual coding benchmark with execution feedback for multimodal LLMs. BlinkCode covers three types of tasks, evaluating capabilities including basic coding, planning, and refinement based on visual information. Our evaluation result demonstrates that, as opposed to LLMs, most open-source multimodal LLMs lack coding capabilities, calling for the community to develop techniques to inject coding skills into multimodal LLMs to turn them into vision-enabled agents. We include the whole dataset in the supplementary material.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section">
+  <div class="container" style="margin-top: -100px; margin-bottom: -100px;">
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <div class="content has-text-centered">
+          <h2>Overview of BlinkCode Benchmark</h2>
+          <img src="static\images\frameimage.png" alt="geometric reasoning" width="81%" />
+          <p>
+            Figure: Overview of our proposed benchmark BlinkCode compared to previous benchmarks for multimodal LLMs.
+            To evaluate complex reasoning, planning, tool use, and interactive refinement capabilities of multimodal LLMs,
+            we design three types of coding tasks, including basic coding problems, code-generated figure reconstruction, and
+            visual programming tasks, highlighting the potential of multimodal LLMs to be vision-enabled agents.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title has-text-centered">
+        Image examples of the 9 Tasks in BlinkCode Benchmark
+      </h1>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/WebPageimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            Webpage: Use HTML code to recreate a webpage
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/MatPlotimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            Matplotlib: Use Python code with Matplotlib to recreate a scientific plot
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/SVGimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            SVG: Use SVG code to recreate a scalable vector graphic
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/TIKZimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            TikZ: Use LaTeX with the TikZ package to recreate a diagram
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/Math-V.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            MATH-V: Use Python code to solve a math problem
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/VPimage1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            Visual Programming: Solve visual tasks using Python
+            <br>
+            <br>
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/humanevalimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            HumanEval-V: Solve coding problems using Python
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/MBPPimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            MBPP-V: Solve basic coding problems using Python
+          </h2>
+        </div>
+        <div class="item has-text-centered">
+          <!-- Your image here -->
+          <img src="static/images/gsm8kimage.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            GSM8K-V: Solve grade school math problems using Python
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank"> Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
